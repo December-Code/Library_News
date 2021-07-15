@@ -1,0 +1,108 @@
+Sub transfer_Click()
+Dim i, rowNum, ColNum As Long
+Dim context As String
+
+Dim MyRange As Range
+Dim Name, Th_CName, Th_EName, Adv_Name, Tp, Year, Abstr, Schname, Master As Range
+Dim Lan, KeyC, KeyE, Link As Range
+
+Set Name = Worksheets("records").Range("A1:CA1").Find(What:="作者姓名(中文)", LookAt:=xlWhole)
+Set Th_CName = Worksheets("records").Range("A1:CA1").Find(What:="論文名稱(中文)", LookAt:=xlWhole)
+Set Th_EName = Worksheets("records").Range("A1:CA1").Find(What:="論文名稱(外文)", LookAt:=xlWhole)
+Set Adv_Name = Worksheets("records").Range("A1:CA1").Find(What:="指導教授姓名(中文)", LookAt:=xlWhole)
+Set Tp = Worksheets("records").Range("A1:CA1").Find(What:="學位類別", LookAt:=xlWhole)
+Set Year = Worksheets("records").Range("A1:CA1").Find(What:="畢業學年度", LookAt:=xlWhole)
+Set Abstr = Worksheets("records").Range("A1:CA1").Find(What:="摘要(中文)", LookAt:=xlWhole)
+Set Lan = Worksheets("records").Range("A1:CA1").Find(What:="語文別", LookAt:=xlWhole)
+Set KeyC = Worksheets("records").Range("A1:CA1").Find(What:="中文關鍵詞", LookAt:=xlWhole)
+Set KeyE = Worksheets("records").Range("A1:CA1").Find(What:="外文關鍵詞", LookAt:=xlWhole)
+Set Link = Worksheets("records").Range("A1:CA1").Find(What:="引用網址", LookAt:=xlWhole)
+Set Schname = Worksheets("records").Range("A1:CA1").Find(What:="校院名稱", LookAt:=xlWhole)
+Set Master = Worksheets("records").Range("A1:CA1").Find(What:="系所名稱", LookAt:=xlWhole)
+    
+rowNum = Worksheets("records").Cells(Rows.Count, 1).End(xlUp).Row
+
+For i = 2 To rowNum
+    If Not Th_CName Is Nothing Then
+    Worksheets("transfer").Cells(i, "A") = Worksheets("records").Cells(i, Th_CName.Column) '論文名稱
+    ElseIf i = 2 Then
+    MsgBox "論文名稱無法匹配!"
+    End If
+    
+    If Not Th_EName Is Nothing Then
+    Worksheets("transfer").Cells(i, "B") = Worksheets("records").Cells(i, Th_EName.Column) '論文名稱(外文)
+    ElseIf i = 2 Then
+    MsgBox "論文名稱(外文)無法匹配!"
+    End If
+    
+    If Not Name Is Nothing Then
+    Worksheets("transfer").Cells(i, "C") = Worksheets("records").Cells(i, Name.Column) '研究生
+    ElseIf i = 2 Then
+    MsgBox "研究生無法匹配!"
+    End If
+
+    If Not Year Is Nothing Then
+    Worksheets("transfer").Cells(i, "D") = 1911 + Worksheets("records").Cells(i, Year.Column) 'Date
+    ElseIf i = 2 Then
+    MsgBox "Date無法匹配!"
+    End If
+
+    Worksheets("transfer").Cells(i, "E") = Worksheets("transfer").Cells(2, "R") 'type 使用者輸入
+    
+    If Not Abstr Is Nothing Then
+    Worksheets("transfer").Cells(i, "F") = Worksheets("records").Cells(i, Abstr.Column) '論文摘要
+    ElseIf i = 2 Then
+    MsgBox "論文摘要無法匹配!"
+    End If
+
+    If Not KeyC Is Nothing Then
+    Worksheets("transfer").Cells(i, "G") = Application.WorksheetFunction.Substitute(Worksheets("records").Cells(i, KeyC.Column), Chr(10), ";") '中文關鍵字
+    ElseIf i = 2 Then
+    MsgBox "中文關鍵字無法匹配!"
+    End If
+
+    If Not KeyE Is Nothing Then
+    Worksheets("transfer").Cells(i, "H") = Application.WorksheetFunction.Substitute(Worksheets("records").Cells(i, KeyE.Column), Chr(10), ";") '外文關鍵字
+    ElseIf i = 2 Then
+    MsgBox "外文關鍵字無法匹配!"
+    End If
+
+    If Not Lan Is Nothing Then
+        If InStr(Worksheets("records").Cells(i, Lan.Column), "") = 1 Then
+        Worksheets("transfer").Cells(i, "I") = "zh-TW"
+        ElseIf InStr(Worksheets("records").Cells(i, Lan.Column), "英文") = 1 Then
+        Worksheets("transfer").Cells(i, "I") = "en"
+        End If
+    ElseIf i = 2 Then
+    MsgBox "語言類別無法匹配!"
+    End If
+    
+    If Not Link Is Nothing Then
+    Worksheets("transfer").Cells(i, "J") = Worksheets("records").Cells(i, Link.Column) '引用link
+    ElseIf i = 2 Then
+    MsgBox "引用link無法匹配!"
+    End If
+
+    If Not Master Is Nothing Then
+    Worksheets("transfer").Cells(i, "K") = Worksheets("records").Cells(i, Schname.Column) + Worksheets("records").Cells(i, Master.Column) '校院名稱+系所名稱
+    ElseIf i = 2 Then
+    MsgBox "校院名稱或系所名稱無法匹配!"
+    End If
+
+    If Not Tp Is Nothing Then
+    Worksheets("transfer").Cells(i, "L") = "學位:" + Worksheets("records").Cells(i, Tp.Column) '學位
+    ElseIf i = 2 Then
+    MsgBox "學位無法匹配!"
+    End If
+    
+    If Not Adv_Name Is Nothing Then
+    Worksheets("transfer").Cells(i, "M") = "指導教授:" + Application.WorksheetFunction.Substitute(Worksheets("records").Cells(i, Adv_Name.Column), Chr(10), "、") '教授
+    ElseIf i = 2 Then
+    MsgBox "指導教授無法匹配!"
+    End If
+    
+Next i
+
+MsgBox "轉換完畢!"
+
+End Sub

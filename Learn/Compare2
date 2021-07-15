@@ -1,0 +1,15 @@
+  string remove_ctrl2(string s)   //使用複合賦值 避免臨時字串
+  {
+    string result;
+    for(int i =0;i < s.length(); ++ i)
+    {
+      if(s[i] >= 0x20)
+      {
+        result += s[i];
+      }
+
+    }
+    return  result;
+
+  } 
+

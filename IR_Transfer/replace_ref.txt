@@ -1,0 +1,242 @@
+Sub Macro1()
+
+
+    '2012/7/10   修改可以取代格式的程式
+    '2012/7/19   加入"大小寫需相符"選項
+    '2012/8/5    加入"全半型需相符"選項
+    '2012/8/24   加入"取代後是否自動存檔關閉"
+    '2012/10/31  解決註解不顯示時取代會出現錯誤
+    '2013/1/2    加入可以取代範圍
+    '2015/6/27  修正取代原則的部分取代錯誤
+
+
+    Dim nowworkbook As String   '參數設定的檔案名稱
+    Dim s As Variant  '要被取代的字串
+    Dim d As String  '取代過的字串
+    Dim strFileName As String   '讀取的檔案名稱
+    Dim temp As String  '暫存變數
+    Dim StringCase As String    '大小寫是否相符
+    Dim StringByte As String    '全型半型是否相符
+    Dim sFileClose  As String   '取代後是否自動存檔關閉
+    Dim n As Integer '從那一列開始讀取檔案名稱
+    Dim i As Integer '從那一列開始讀取取代文字
+    
+    Dim strSheetName As String '指定工作表名稱
+    
+
+    
+    nowworkbook = Excel.ActiveWorkbook.Name
+
+    n = 11
+    
+    ReplyMethod = Range("b1")
+    replysheet = Range("b2")
+    StringCase = Range("b3")    '大小寫是否相符
+    StringByte = Range("b4") '全型半型是否相符
+    sFileClose = Range("b5") '取代後是否自動存檔關閉
+    sRange = Range("b6")    '取代範圍
+    strSheetName = Range("b7").Value   '指定工作表名稱
+    
+    If StringCase = "是" Then
+       blStringCase = True
+    Else
+       blStringCase = False
+    End If
+    
+    If StringByte = "是" Then
+       blStringByte = True
+    Else
+       blStringByte = False
+    End If
+    
+    Application.DisplayAlerts = False '關閉提醒
+    
+    strFileName = Cells(n, 1)
+    While strFileName <> ""
+        Workbooks.Open Filename:=(Excel.ActiveWorkbook.Path & "\" & strFileName), UpdateLinks:=0
+        
+        
+        If replysheet = "全部工作表" Then
+            For j = 1 To Sheets.Count
+            
+                Sheets(j).Select
+                
+                i = 11
+            
+                
+                While Windows(nowworkbook).ActiveSheet.Cells(i, 2) <> ""
+                    s = Windows(nowworkbook).ActiveSheet.Cells(i, 2)
+                    d = Windows(nowworkbook).ActiveSheet.Cells(i, 3)
+                    
+                    '取代格式設定
+                    blReplaceFormat = True
+                    If d = "" Then
+                        blReplaceFormat = False
+                    End If
+
+                    
+                    
+                    
+                    Application.ReplaceFormat.Font.Color = Windows(nowworkbook).ActiveSheet.Cells(i, 3).Font.Color
+                    Application.ReplaceFormat.Interior.Color = Windows(nowworkbook).ActiveSheet.Cells(i, 3).Interior.Color
+                    If ReplyMethod = "部分取代" Then
+                        If (sRange <> "") Then  '選取部分範圍
+                            Range(sRange).Select
+                            Selection.Replace What:=s, Replacement:=d, ReplaceFormat:=blReplaceFormat, MatchCase:=blStringCase, MatchByte:=blStringByte, lookat:=xlPart
+                        Else
+                            Cells.Replace What:=s, Replacement:=d, ReplaceFormat:=blReplaceFormat, MatchCase:=blStringCase, MatchByte:=blStringByte, lookat:=xlPart
+                        End If
+
+                    
+                         '取代文字方塊
+                        For k = 1 To ActiveSheet.Shapes.Count
+                            If ActiveSheet.Shapes(k).Visible = True Then    '2012/10/31加入如果是看得見的再選取
+                                ActiveSheet.Shapes(k).Select
+                                If (ActiveSheet.Shapes(k).Type = 1 Or ActiveSheet.Shapes(k).Type = 17) Then  '有文字再取代
+                                    If IsError(Selection.Characters.Text) = False Then
+                                        temp = Selection.Characters.Text
+                                        temp = Replace(temp, s, d)
+                                        Selection.Characters.Text = temp
+                                     End If
+                                End If
+                            End If
+                        Next
+                    Else
+                        If (sRange <> "") Then  '選取部分範圍
+                            Range(sRange).Select
+                            Selection.Replace What:=s, Replacement:=d, lookat:=xlWhole, ReplaceFormat:=blReplaceFormat, MatchCase:=blStringCase, MatchByte:=blStringByte
+                        Else
+                            Cells.Replace What:=s, Replacement:=d, lookat:=xlWhole, ReplaceFormat:=blReplaceFormat, MatchCase:=blStringCase, MatchByte:=blStringByte
+                        End If
+                        
+                        
+                        '取代文字方塊
+                        For k = 1 To ActiveSheet.Shapes.Count
+                            If ActiveSheet.Shapes(k).Visible = True Then    '2012/10/31加入如果是看得見的再選取
+                                ActiveSheet.Shapes(k).Select
+                                If (ActiveSheet.Shapes(k).Type = 1 Or ActiveSheet.Shapes(k).Type = 17) Then   '有文字再取代
+                                    If IsError(Selection.Characters.Text) = False Then
+                                        temp = Selection.Characters.Text
+                                        If temp = s Then
+                                            temp = Replace(temp, s, d)
+                                            Selection.Characters.Text = temp
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        Next
+                    End If
+                    i = i + 1
+                Wend
+                Cells(1, 1).Select
+            Next
+            
+        Else
+        
+                '指定工作表名稱
+                If strSheetName <> "" And replysheet = "指定工作表" Then
+                    If check_sheet(Sheets(1), strSheetName) Then '檢查工作表是否存在
+                        Sheets(strSheetName).Select
+                    Else
+                        MsgBox "工作表【" & strSheetName & "】不存在,請檢查是否名稱拼錯或是多了空白"
+                        Exit Sub
+                    End If
+                End If
+                
+                i = 11
+                
+                While Windows(nowworkbook).ActiveSheet.Cells(i, 2) <> ""
+                    s = Windows(nowworkbook).ActiveSheet.Cells(i, 2)
+                    d = Windows(nowworkbook).ActiveSheet.Cells(i, 3)
+                    '取代格式設定
+                    Application.ReplaceFormat.Font.Color = Windows(nowworkbook).ActiveSheet.Cells(i, 3).Font.Color
+                    Application.ReplaceFormat.Interior.Color = Windows(nowworkbook).ActiveSheet.Cells(i, 3).Interior.Color
+ 
+                    blReplaceFormat = True
+                    If d = "" Then
+                        blReplaceFormat = False
+                    End If
+                    
+
+                    
+                    If ReplyMethod = "部分取代" Then
+                        If (sRange <> "") Then  '選取部分範圍
+                            Range(sRange).Select
+                            Selection.Replace What:=s, Replacement:=d, ReplaceFormat:=blReplaceFormat, MatchCase:=blStringCase, MatchByte:=blStringByte, lookat:=xlPart
+                        Else
+                            Cells.Replace What:=s, Replacement:=d, ReplaceFormat:=blReplaceFormat, MatchCase:=blStringCase, MatchByte:=blStringByte, lookat:=xlPart
+                        End If
+
+                        
+                        '取代文字方塊
+                        For k = 1 To ActiveSheet.Shapes.Count
+                            If ActiveSheet.Shapes(k).Visible = True Then    '2012/10/31加入如果是看得見的再選取
+                                ActiveSheet.Shapes(k).Select
+                                If (ActiveSheet.Shapes(k).Type = 1 Or ActiveSheet.Shapes(k).Type = 17) Then  '有文字再取代
+                                    If IsError(Selection.Characters.Text) = False Then
+                                        temp = Selection.Characters.Text
+                                        temp = Replace(temp, s, d)
+                                        Selection.Characters.Text = temp
+                                     End If
+                                End If
+                            End If
+                        Next
+                        
+                    Else
+                        If (sRange <> "") Then  '選取部分範圍
+                            Range(sRange).Select
+                            Selection.Replace What:=s, Replacement:=d, lookat:=xlWhole, ReplaceFormat:=blReplaceFormat, MatchCase:=blStringCase, MatchByte:=blStringByte
+                        Else
+                            Cells.Replace What:=s, Replacement:=d, lookat:=xlWhole, ReplaceFormat:=blReplaceFormat, MatchCase:=blStringCase, MatchByte:=blStringByte
+                        End If
+                        
+                        '取代文字方塊
+                        For k = 1 To ActiveSheet.Shapes.Count
+                            If ActiveSheet.Shapes(k).Visible = True Then    '2012/10/31加入如果是看得見的再選取
+                                ActiveSheet.Shapes(k).Select
+                                If (ActiveSheet.Shapes(k).Type = 1 Or ActiveSheet.Shapes(k).Type = 17) Then   '有文字再取代
+                                    If IsError(Selection.Characters.Text) = False Then
+                                        temp = Selection.Characters.Text
+                                        If temp = s Then
+                                            temp = Replace(temp, s, d)
+                                            Selection.Characters.Text = temp
+                                        End If
+                                    End If
+                                End If
+                            End If
+                        Next
+                    
+                    End If
+                    
+                    i = i + 1
+                Wend
+                Cells(1, 1).Select
+        End If
+        
+        n = n + 1
+        
+        If sFileClose = "是" Then   '將檔案關閉
+            
+            ActiveSheet.SaveAs (Excel.ActiveWorkbook.Path & "\" & strFileName)  '將檔案存檔
+            Windows(strFileName).Close  '將檔案關閉
+        End If
+        
+
+       
+       
+        strFileName = Sheet1.Cells(n, 1)
+    Wend
+    Application.DisplayAlerts = True  '開啟提醒
+    Windows(nowworkbook).Activate
+    MsgBox "取代完成,請切換視窗查看或是開啟檔案查看結果"
+End Sub
+Function check_sheet(ByVal objSheet, ByVal strSheetName)
+    '檢查工作表名稱是否存在
+    check_sheet = False
+    For i = 1 To objSheet.Parent.Sheets.Count
+        If objSheet.Parent.Sheets(i).Name = strSheetName Then
+           check_sheet = True
+           Exit For
+        End If
+    Next
+End Function

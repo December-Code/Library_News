@@ -1,0 +1,9 @@
+If strSheetName <> "" And replysheet = "指定工作表" Then
+If check_sheet(Sheets(1), strSheetName) Then '檢查工作表是否存在
+    Sheets(strSheetName).Select
+Else
+    MsgBox "工作表【" & strSheetName & "】不存在,請檢查是否名稱拼錯或是多了空白"
+    Exit Sub
+End If
+
+End If

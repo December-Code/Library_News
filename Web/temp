@@ -1,0 +1,107 @@
+<style type="text/css">.Anchortitle>h1 {
+                  position: relative;
+                  background: none;
+                  color: #c0392b;
+                  font-weight: bold;
+                  border-bottom: solid 2px #e3e3e3;
+                  padding-bottom: 10px;
+                  font-size: 1.5em !important;
+                  padding-top: 1em;
+            }
+
+            .Anchortitle>h2 {
+                  position: relative;
+                  background: none;
+                  color: #0563c1;
+                  font-weight: bold;
+                  padding: 10px;
+                  font-size: 1.2em !important;
+                  padding-bottom: 8px;
+            }
+
+            .Anchortitle>h2>a {
+                  position: relative;
+                  background: none;
+                  color: #0563c1;
+                  font-weight: bold;
+                  padding: 10px;
+                  font-size: 1.2em !important;
+            }
+
+            .context>h3 {
+                  position: relative;
+                  background: none;
+                  color: #000000;
+                  font-weight: bold;
+                  padding-top: 20px;
+                  padding-left: 20px;
+                  font-size: 1.25em !important;
+            }
+
+            .context>p {
+                  position: relative;
+                  background: none;
+                  color: #444444;
+                  font-weight: bold;
+                  padding-top: 10px;
+                  padding-left: 35px;
+                  font-size: 1.2em !important;
+                  line-height: 250%;
+
+            }
+
+            .GoTop {
+                  position: relative;
+                  text-align: right;
+                  padding-right: 20px;
+                  color: #444444;
+                  font-weight: bolder;
+                  padding-top: 15px;
+                  text-decoration: underline;
+            }
+</style>
+<div class="Anchortitle">
+<h1 id="top">Reference Service</h1>
+
+<h3><strong><a href="#Research"><span style="color:#0000cc;">1.Research consultation</span></a></strong></h3>
+
+<h3><strong><a href="#E-Resource"><span style="color:#0000cc;">2.E-Resource Service</span></a></strong></h3>
+</div>
+
+<div class="context">
+<h4 id="Research"><span style="font-family:微軟正黑體;">1.Research consultation</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">The Library offers a one-on-one research consultation service to all NTUST faculty members and students to assist them in</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">-Identifying information needs</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">-Locating resources most relevant to their research projects</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">-Constructing effective search techniques</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">-Searching electronic and print resources effectively</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">-Evaluating the resources used</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">Other Research Assistance</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">You can contact the reference librarian directly for research assistance or by email, phonecall..etc.</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">General and specific workshops and seminars are arranged from time to time. Please check our programs and register.</span></h4>
+
+<div>&nbsp;</div>
+
+<div id="E-Resource"><span style="font-family:微軟正黑體;">2.E-Resource Service</span></div>
+
+<h4><span style="font-family:微軟正黑體;">The library has subscribed to a wide variety of online resources including e-books,</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">periodicals and newspapers, thesis and dissertations, conference proceedings,</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">encyclopedias, and multimedia databases.</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">Discovery System is a one-stop search system for large amounts of print and online content, including most of NTUST&rsquo;S collections.</span></h4>
+
+<h4><span style="font-family:微軟正黑體;">Users could easily access to our e-resources in campus or outside the campus.</span></h4>
+
+<div class="GoTop"><a href="#top">GoTop</a></div>
+</div>

@@ -1,0 +1,170 @@
+Sub Convert()
+
+Dim Re, RealRow As Integer
+Dim Title, ArrContext
+Dim Dict, TitleDic As Object
+Dim ExistArry(15, 2) As Integer
+
+
+Set TitleDic = CreateObject("scripting.dictionary")
+Set Dict = CreateObject("scripting.dictionary")
+
+
+'-------------------------------標題title---------------------------
+Title = Range(Worksheets("Origin").[A1], Worksheets("Origin").Cells(1, Columns.Count).End(xlToLeft))
+
+For i = 1 To UBound(Title, 2) '用row計算
+    If Not Title(1, i) = "" Then
+     TitleDic.Add Title(1, i), i '字典物件.Add 索引值,內容物
+    End If
+Next i
+'-----------------------------------------------------------------
+
+If TitleDic.Exists("摘要") Then 'sys_hyperlink
+    ExistArry(1, 1) = 1
+    ExistArry(1, 2) = TitleDic("摘要")
+Else
+    MsgBox "「摘要」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("執行機構") Then 'contributor
+    ExistArry(2, 1) = 1
+    ExistArry(2, 2) = TitleDic("執行機構")
+Else
+    MsgBox "「執行機構」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("中文關鍵字") Then 'subject C
+    ExistArry(3, 1) = 1
+    ExistArry(3, 2) = TitleDic("中文關鍵字")
+Else
+    MsgBox "「中文關鍵字」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("英文關鍵字") Then 'subject E
+    ExistArry(4, 1) = 1
+    ExistArry(4, 2) = TitleDic("英文關鍵字")
+Else
+    MsgBox "「英文關鍵字」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("英文標題") Then 'title:alternative
+    ExistArry(5, 1) = 1
+    ExistArry(5, 2) = TitleDic("英文標題")
+Else
+    MsgBox "「英文標題」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("主要作者") Then 'creator
+    ExistArry(6, 1) = 1
+    ExistArry(6, 2) = TitleDic("主要作者")
+Else
+    MsgBox "「主要作者」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("計畫編號") Then 'description Plan No
+    ExistArry(7, 1) = 1
+    ExistArry(7, 2) = TitleDic("計畫編號")
+Else
+    MsgBox "「計畫編號」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("主管機關") Then 'description PlanOrgan
+    ExistArry(8, 1) = 1
+    ExistArry(8, 2) = TitleDic("主管機關")
+Else
+    MsgBox "「主管機關」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("年度") Then 'description year
+    ExistArry(9, 1) = 1
+    ExistArry(9, 2) = TitleDic("年度")
+Else
+    MsgBox "「年度」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("中文標題") Then 'title
+    ExistArry(10, 1) = 1
+    ExistArry(10, 2) = TitleDic("中文標題")
+Else
+    MsgBox "「中文標題」欄位 查找不到!"
+End If
+
+If TitleDic.Exists("其他作者") Then 'creator
+    ExistArry(11, 1) = 1
+    ExistArry(11, 2) = TitleDic("其他作者")
+Else
+    MsgBox "「其他作者」欄位 查找不到!"
+End If
+
+Re = 0
+
+If ExistArry(2, 1) Then
+    ArrContext = Range(Worksheets("Origin").[C1], Worksheets("Origin").Cells(Rows.Count, TitleDic("/GRB05/EXCU_ORGAN_NAME")).End(xlUp)) '從cell(1,AG)到cell(最後一列,指定行)
+   
+    For i = 2 To UBound(ArrContext, 1)
+    
+            If InStr(ArrContext(i, 1), "國立台灣科技大學") Or InStr(ArrContext(i, 1), "國立臺灣科技大學") Then
+            
+                RealRow = i - Re
+                Worksheets("Result").Cells(RealRow, "A") = Worksheets("Origin").Cells(i, ExistArry(2, 2))      'sys_hyperlink
+                
+                If ExistArry(10, 1) Then
+                Worksheets("Result").Cells(RealRow, "B") = Worksheets("Origin").Cells(i, ExistArry(10, 2))      'title
+                End If
+
+                If ExistArry(5, 1) Then
+                Worksheets("Result").Cells(RealRow, "C") = Worksheets("Origin").Cells(i, ExistArry(5, 2))      'title:alternative
+                End If
+
+                If ExistArry(9, 1) Then
+                Worksheets("Result").Cells(RealRow, "D") = CStr(Worksheets("Origin").Cells(i, ExistArry(9, 2)) + 1911)    'description year
+                End If
+
+                Worksheets("Result").Cells(RealRow, "E") = Worksheets("Result").Cells(1, "V")
+                
+                If ExistArry(7, 1) Then
+                Worksheets("Result").Cells(RealRow, "F") = "計畫編號：" + CStr(Worksheets("Origin").Cells(i, ExistArry(7, 2)))      'description Plan No
+                End If
+               
+                If ExistArry(8, 1) Then
+                Worksheets("Result").Cells(RealRow, "G") = "主管機關：" + CStr(Worksheets("Origin").Cells(i, ExistArry(8, 2)))       'description PlanOrgan
+                End If
+               
+                If ExistArry(9, 1) Then
+                Worksheets("Result").Cells(RealRow, "H") = "年度：" + CStr(Worksheets("Origin").Cells(i, ExistArry(9, 2)))      'description year
+                End If
+                
+                If ExistArry(6, 1) And ExistArry(11, 1) Then
+                
+                 If Worksheets("Origin").Cells(i, ExistArry(11, 2)) <> "" Then
+                    Worksheets("Result").Cells(RealRow, "I") = Worksheets("Origin").Cells(i, ExistArry(6, 2)) + ";" + Replace(Worksheets("Origin").Cells(i, ExistArry(11, 2)), ",", ";") 'creator
+                 Else
+                    Worksheets("Result").Cells(RealRow, "I") = Worksheets("Origin").Cells(i, ExistArry(6, 2))
+                 End If
+                 
+                End If
+
+                If ExistArry(3, 1) Then
+                Worksheets("Result").Cells(RealRow, "J") = StrConv(Worksheets("Origin").Cells(i, ExistArry(3, 2)), vbNarrow)     'subject C
+                End If
+
+                If ExistArry(4, 1) Then
+                Worksheets("Result").Cells(RealRow, "K") = StrConv(Worksheets("Origin").Cells(i, ExistArry(4, 2)), vbNarrow)     'subject E
+                End If
+
+                If ExistArry(1, 1) Then
+                Worksheets("Result").Cells(RealRow, "L") = Worksheets("Origin").Cells(i, ExistArry(1, 2))       'sys_hyperlink
+                End If
+                
+                Else
+                Re = Re + 1
+
+            End If
+    Next i
+    
+End If
+
+
+
+End Sub

@@ -1,0 +1,135 @@
+<!-- 館藏目錄 -->
+
+<form action="https://sierra.lib.ntust.edu.tw/search~S1*cht" class="unpadded directory" id="search" method="post"
+    name="search" target="_blank"><span style="color:#fff">查詢：</span><select id="searchtype" name="searchtype">
+        <option selected="selected" value="X">關鍵字</option>
+        <option value="t">書刊名</option>
+        <option value="a">作者</option>
+        <option value="d">主題</option>
+        <option value="c">索書號(美國國會)</option>
+        <option value="l">索書號(中國圖書)</option>
+        <option value="i">ISBN/ISSN</option>
+        <option value="v">條碼號</option>
+    </select>
+    <input id="SORT" name="SORT" type="hidden" value="D" />
+    <input maxlength="75" name="searcharg" type="text" />
+    <span style="color:#fff">館藏範圍：</span>
+    <label for="searchscope" style="display: none">Search Scope</label>
+    <select id="searchscope" name="searchscope">
+        <option selected="selected" value="1">全部館藏</option>
+        <option value="2">圖書</option>
+        <option value="3">期刊</option>
+        <option value="4">視聽資料</option>
+        <option value="5">學位論文</option>
+        <option value="6">電子書</option>
+        <option value="7">電子期刊</option>
+    </select>
+    <span class="nowrap">
+        <input align="absMiddle" alt="Submit Search" name="submit" src="/var/file/49/1049/img/661/search-icon-th.png"
+            style="border-bottom: 0px solid; border-left: 0px solid; width: 50px; height: 56px; margin-top:3px;border-top: 0px solid; border-right: 0px solid"
+            type="image" value="Submit" />
+    </span>
+</form>
+<p>
+    <font size="2">★<a href="https://sierra.lib.ntust.edu.tw/patroninfo*cht~S1" target="_blank"><span
+                style="color: #fff">個人借閱記錄查詢</span></a></font>。
+</p>
+
+<!-- 整合查詢 -->
+
+<form action="http://search.ebscohost.com/login.aspx" id="googleScholar" method="get" onsubmit="ebscoPreProcess(this)"
+    target="_blank">
+    <span style="color:#fff">查詢關鍵字：</span>
+    <input id="searchterm" name="bquery" size="20" type="text" />
+    <input name="direct" type="hidden" value="true" />
+    <input name="lang" type="hidden" value="zh-tw" />
+    <input name="scope" type="hidden" value="site" />
+    <input name="site" type="hidden" value="eds-live" />
+    <input name="search_prefix" type="hidden" value="" />
+    <input name="nquery" type="hidden" value="RadioButtonSearchTag_AU" />
+    <!-- Authentication and Profile Values -->
+    <input name="authtype" type="hidden" value="ip,guest" />
+    <input name="custid" type="hidden" value="s3143671" />
+    <input name="groupid" type="hidden" value="main" />
+    <input name="profile" type="hidden" value="eds" />
+    <!-- search box and submit button -->
+    <span class="nowrap">
+        <input align="absMiddle" alt="Submit Search" name="submit" src="/var/file/49/1049/img/661/search-icon-th.png"
+            style="border-bottom: 0px solid; border-left: 0px solid; width: 50px; height: 52px; border-top: 0px solid; margin-top:5px;border-right: 0px solid"
+            type="image" value="Submit" />
+        &nbsp;
+    </span>
+</form>
+<p>
+    <font>
+        <span style="color:#fff">整合圖書館資源之查詢系統
+            <a
+                href="http://search.ebscohost.com/login.aspx?custid=s3143671&amp;groupid=main&amp;profile=eds&amp;authtype=ip,guest">
+                <span style="color:#FF8800;">(EBSCO Discovery
+                    Service，簡稱EDS)
+                </span>
+            </a>，包括本館所訂購館藏、電子書、電子資料庫
+            <br>
+            所收錄之電子期刊等資源，讓讀者可以Google like的查詢方式，更有效率地檢索到圖書館資源</span>
+    </font>。
+</p>
+
+/*
+<form action="http://search.ebscohost.com/login.aspx" id="googleScholar" method="get" onsubmit="ebscoPreProcess(this)"
+    target="_blank">
+    <span style="color:#fff">查詢關鍵字：</span>
+    <input id="searchterm" name="bquery" size="20" type="text" />
+    <input name="direct" type="hidden" value="true" />
+    <input name="lang" type="hidden" value="zh-tw" />
+    <input name="scope" type="hidden" value="site" />
+    <input name="site" type="hidden" value="eds-live" />
+    <input name="search_prefix" type="hidden" value="" />
+    <input name="nquery" type="hidden" value="RadioButtonSearchTag_AU" />
+    <!-- Authentication and Profile Values -->
+    <input name="authtype" type="hidden" value="ip,guest" />
+    <input name="custid" type="hidden" value="s3143671" />
+    <input name="groupid" type="hidden" value="main" />
+    <input name="profile" type="hidden" value="eds" />
+    <!-- search box and submit button -->
+    <span class="nowrap">
+        <input align="absMiddle" alt="Submit Search" name="submit" src="/var/file/49/1049/img/661/search-icon-th.png"
+            style="border-bottom: 0px solid; border-left: 0px solid; width: 50px; height: 52px; border-top: 0px solid; margin-top:5px;border-right: 0px solid"
+            type="image" value="Submit" />
+        &nbsp;
+    </span>
+</form>
+<p>
+    <font>
+        <span style="color:#fff">整合圖書館資源之查詢系統
+            <a
+                href="http://search.ebscohost.com/login.aspx?custid=s3143671&amp;groupid=main&amp;profile=eds&amp;authtype=ip,guest">
+                <span style="color:#fff;">(EBSCO Discovery
+                    Service，簡稱EDS)
+                </span>
+            </a>，包括本館所訂購館藏、電子書、電子資料庫
+            <br>
+            所收錄之電子期刊等資源，讓讀者可以Google like的查詢方式，更有效率地檢索到圖書館資源</span>
+    </font>。
+</p>
+*/
+
+<!-- 電子資料庫查詢 -->
+
+<form action="http://gssapps.ebscohost.com/customerspecific/s3143671/db/index.php" class="unpadded Repository"
+    id="search" method="get" name="search" target="_blank">
+    <span style="color:#fff">查詢：</span>
+    <select id="searchtype" name="searchtype">
+        <option selected="selected" value="y">關鍵字查詢</option>
+    </select>
+    <input align="center" maxlength="40" name="keyword" size="40" type="text" />
+    <span class="nowrap">
+        <input align="absMiddle" alt="Submit Search" name="submit" src="/var/file/49/1049/img/661/search-icon-th.png"
+            style="border-bottom: 0px solid; border-left: 0px solid; width: 50px; height: 52px; margin-top:5px; border-top: 0px solid; border-right: 0px solid"
+            type="image" value="Submit" />
+    </span>
+</form>
+<p>
+    <font size="2" style="color:#fff">電子資料庫即是針對特定主題內容，將資料進行加值整理，以方便查詢使用。詳細使用指引請參考
+        <a href="/p/412-1049-256.php" target="_blank">
+            <span style="color: #fff">此處</span></a></font>。
+</p>
