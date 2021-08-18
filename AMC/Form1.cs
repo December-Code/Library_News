@@ -125,7 +125,7 @@ namespace AMC
 
             StringBuilder HtmlTxt = new StringBuilder();
             if (monthString != "January")
-                HtmlTxt.AppendLine("<p>&nbsp;</p>");
+            HtmlTxt.AppendLine("<p>&nbsp;</p>");
             HtmlTxt.AppendLine("<p><a id = \"" + years + month.ToString(fmt) + "\" ></a></p>");
             HtmlTxt.AppendLine("<p>&nbsp;</p>");
             HtmlTxt.AppendLine("<table width=\"770\" border=\"1\" cellpadding=\"0\" cellspacing=\"5\" class=\"table\" bordercolor=\"#CC6600\"");

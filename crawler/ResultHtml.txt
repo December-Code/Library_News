@@ -1,0 +1,777 @@
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+<html   dir="LTR">
+<head>
+<title>National Taiwan University of Science & Technology</title>
+<base target="_self"/>
+<link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
+<link rel="stylesheet" type="text/css" href="/screens/styles.css" />
+<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
+<script type="text/javascript" src="/scripts/common.js">
+</script>
+<script type="text/javascript" src="/scripts/features.js">
+</script>
+<script type="text/javascript" src="/scripts/elcontent.js">
+</script>
+
+<script type="text/javascript" src="/screens/bibdisplay.js"></script>
+</head>
+<body bgcolor="#FFFFFF" >
+<!-- begin toplogo.html file -->
+
+<!-- Rel 2007 "Skyline" Example Set -->
+
+<!-- This File Last Changed: 24 April 2008 -->
+
+<a href="#content"><img src="/screens/transparent.gif" width="1" height="1" border="0" alt="Skip to content"></a>
+
+<div class="topLogoDiv">
+
+<div class="floatRight">
+
+<ul class="headerNav">
+
+<li><a href="http://library.ntust.edu.tw">回圖書館首頁</a></li>
+
+<li> | </li>
+
+<li><a href="/screens*cht/help_index_cht.html">線上說明</a></li>
+
+<li> | </li>
+
+<li><a href="/">English</a></li>
+
+<li> | </li>
+
+<li><a href="/patroninfo*cht">登入</a></li>
+
+</ul>
+
+</div>
+
+<a href="/*cht"><img src="/screens*cht/ntust_webpac.gif" alt="臺科大館藏目錄"/></a>
+
+</div>
+
+
+
+<div class="clear"> <!-- content div -->
+
+<div class="leftNavDiv"><!-- left nav -->
+
+<ul class="leftCol">
+
+
+
+<li class="navHeader">我的圖書館</li>
+
+<li><a href="/patroninfo*cht">個人借閱查詢</a></li>
+
+<!--
+
+<li><a href="/selfreg">Create an account</a></li>
+
+-->
+
+<li><a href="https://suggestion.lib.ntust.edu.tw/site/BookRecommend/Service/showNewArrivals.jsp" target='_blank'>推薦採購</a></li>
+<li><a href="https://library.ntust.edu.tw/p/423-1049-92.php?Lang=zh-tw" target='_blank'>來信指教</a></li>
+
+<!--
+
+<li><a href="/illb">Inter-Library Loan</a></li>
+
+-->
+
+<li><a href="https://library.ntust.edu.tw/p/423-1049-92.php?Lang=zh-tw'>來信指教</a></li>
+
+<li class="navHeader">查詢選項</li>
+
+<li><a href="/search*cht/Y">關鍵字</a></li>
+
+<li><a href="/search*cht/t">書刊名</a></li>
+
+<li><a href="/search*cht/a">作者</a></li>
+
+<li><a href="/search*cht/q">作者+書刊名</a></li>
+
+<li><a href="http://sierra.lib.ntust.edu.tw/screens*cht/srchhelp_X_pub_cht.html">出版社</a></li>
+
+<li><a href="/search*cht/d">主題</a></li>
+
+<li><a href="/search*cht/l">索書號(中文圖書分類法)</a></li>
+
+<li><a href="/search*cht/c">索書號(西文國會分類法)</a></li>
+
+<li><a href="/search*cht/i">ISBN/ISSN</a></li>
+
+<li><a href="/search*cht/v">條碼號</a></li>
+
+<li><a href="/search*cht/X">進階查詢</a></li>
+
+<li class="navHeader">教師指定參考書</li>
+<li><a href="/search*cht/r">課程查詢</a></li>
+<li><a href="/search*cht/p">教師查詢</a></li>
+
+<li class="navHeader">相關連結 </li>
+<li><a href="http://www-o.ntust.edu.tw/~lib/libcat/catalog/newbooks.html"target='_blank'>新到館藏</a></li>
+<li><a href="https://library.ntust.edu.tw/p/412-1049-214.php?Lang=zh-tw" target='_blank'>視聽資料分類清單</a></li>
+<li><a href="http://www-o.ntust.edu.tw/~lib/libcat/catalog/referencebook.html"target='_blank'>指定參考書清單</a></li>
+<li><a href="http://www-o.ntust.edu.tw/~lib/libcat/catalog/schoolbook.html"target='_blank'>教科書清單</a></li>
+<li><a href="http://search.ebscohost.com/login.aspx?custid=s3143671&groupid=main&profile=eds&authtype=ip,guest">EDS整合查詢
+</a></li>
+<!--
+
+<li><a href="http://lib.ntust.edu.tw/eresources/databases.htm"target='_blank'>電子資料庫</a></li>
+
+<li><a href="http://lib.ntust.edu.tw/eresources/ejournals.htm"target='_blank'>電子期刊</a></li>
+
+<li><a href="http://lib.ntust.edu.tw/links.htm"target='_blank'>其他資源</a></li>
+-->
+
+<li class="navHeader">行動館藏</li>
+<li><a href="http://mobile.lib.ntust.edu.tw/*cht"><img src="/screens/mobile_link_cht.png"></a></li>
+
+<!--
+
+<li><a href="/feeds">Feeds</a></li>
+
+<li><a href="/screens*cht/rpro.html">Research Pro</a></li>
+
+<li><a href="/iii/calendar">Programs Calendar</a></li>
+
+<li><a href="/">KidsOnline</a></li>
+
+<li><a href="/ftlist">Featured item lists</a></li>
+
+<li><a href="/screens*cht/resources_index.html">Other resources</a></li>
+
+-->
+
+
+
+<!--
+
+<li class="navHeader">Course Reserves</li>
+
+<li><a href="/search/r">Course Search</a></li>
+
+<li><a href="/search/p">Instructor Search</a></li>
+
+-->
+
+
+
+</ul>
+
+</div><!-- end left nav -->
+
+<div id="rightSideCont"><!-- right container -->
+
+<a name="content"></a>
+
+<!--end toplogo.html-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/JavaScript">
+<!-- Hide the JS
+startTimeout(5400000, "/");
+// -->
+</script>
+<div id="TimeoutPopup" tabindex="0" class="modal" onkeypress="refreshSession(event)">
+<div class="modal-content">
+Your session will expire automatically in <span id=TimeoutSeconds>0</span> seconds.<br>
+<br>
+<button id="CancelTimeout" onclick="refreshSession()">Continue session</button>
+<button id="DoTimeout" onclick="endSession()">End session now</button></div>
+</div>
+<noscript>
+<meta http-equiv="Refresh" content="5400;URL=/" />
+</noscript>
+<!--this is customized <screens/bib_display_cht.html>-->
+<div id="bibDisplayBody">
+<div align="center">
+<a href="/*cht"><img src="/screens/startover_cht.gif" alt="重新查詢" border="0" /></a>
+<a href="/search~S2*cht?/i9781259011825/i9781259011825/1,1,1,E/frameset&FF=i9781259011825&1,1,?save=b1742047"><img src="/screens/bibexport_cht.gif" alt="轉出資料" border="0" /></a>
+<a href="/search~S2*cht?/i9781259011825/i9781259011825/1%2C1%2C1%2CE/marc&FF=i9781259011825&1%2C1%2C"><img src="/screens/marc_display_cht.gif" alt="MARC 顯示" border="0" /></a>
+<a href="/search~S2*cht/i"><img src="/screens/another_cht.gif" alt="其他查詢" border="0" /></a>
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
+
+<script type="text/JavaScript">
+<!-- Hide the JS
+var savedScope;
+var savedTag;
+var savedSearch;
+var sortButtonText = null;
+var savedExactSearch = null;
+var sortButtonEvent = null;
+var sortExactBrowseURL = null;
+var sortTypes = new Array();
+var sortLabels = new Array();
+sortTypes[0] = "t";
+sortLabels[0] = "標題";
+sortTypes[1] = "a";
+sortLabels[1] = "作者";
+sortTypes[2] = "c";
+sortLabels[2] = "年";
+sortTypes[3] = "r";
+sortLabels[3] = "反向年";
+sortTypes[4] = "n";
+sortLabels[4] = "索書號";
+sortTypes[5] = "m";
+sortLabels[5] = "資料種類";
+sortLabels[6] = "系統已排序";
+sortTypes[6] = "-";
+var sortSelectedValue = "6";
+var nonSortTags = "XYZPHJQILprWw"
+// Unhide the JS -->
+</script>
+<form name="searchtool" target="_self" action="/search~S2*cht/" method='GET'>
+      <label for="searchtype" style="display:none;">SearchType</label> <select name="searchtype" id="searchtype" onChange="initSort()">
+        <option value="X"> 關鍵字</option>
+        <option value="t"> 書名</option>
+        <option value="a"> 作者</option>
+        <option value="d"> 主題</option>
+        <option value="c"> 索書號(美國國會)</option>
+        <option value="l"> 索書號(中國圖書)</option>
+        <option value="i" selected="selected"> 國際標準號碼</option>
+        <option value="v"> 條碼</option>
+      </select>
+      &nbsp;
+      <label for="searcharg" style="display:none;">Search</label><input type="text" name="searcharg" id="searcharg" size="30" onchange='return searchtoolSubmitAction()'maxlength="75" value="9781259011825" />
+      &nbsp;
+      <label for="searchscope" style="display:none;">Search Scope</label><select name="searchscope" id="searchscope">
+        <option value="1"> 全部館藏</option>
+        <option value="2" selected="selected"> 圖書</option>
+        <option value="3"> 期刊</option>
+        <option value="4"> 視聽資料</option>
+        <option value="5"> 學位論文</option>
+        <option value="6"> 電子書</option>
+        <option value="7"> 電子期刊</option>
+      </select>
+      &nbsp;
+
+<span id="sort_cell">
+</span>
+
+<script type="text/JavaScript">
+<!-- Hide the JS
+initSort();
+// Unhide the JS -->
+</script>
+      <input type="hidden" name="SORT" value="D" /><input type="hidden" name="extended" value="1" />      <input type="submit" name="SUBMIT" value="查詢" onclick='return searchtoolSubmitAction();' />
+<div>
+      <input type="checkbox" name="availlim" value="1"  /> <span class="availLimMessage">搜尋結果僅限於可外借之館藏</span><br/>
+</div>
+<div>
+      <input type="hidden" name="searchlimits" value="" />
+      <input type="hidden" name="searchorigarg" value="i9781259011825" />
+</div>
+</form>
+</div><!-- close tool -->
+<div class="bibHistoryRow">
+<div class="bibSearchHistory">
+<form>
+<select name=HISTORY onChange="onSelectChange(this, '~S2*cht')"><option value="">(查詢歷史)</option>
+<OPTION VALUE="i9781259011825&searchscope=2">國際標準號碼: 9781259011825 在 圖書
+<OPTION VALUE="i9780071317849&searchscope=2">國際標準號碼: 9780071317849 在 圖書
+<OPTION VALUE="i9780470743768 &searchscope=2">國際標準號碼: 9780470743768  在 圖書
+<OPTION VALUE="i9780470743768&searchscope=2">國際標準號碼: 9780470743768 在 圖書
+<OPTION VALUE="i9781860943492&searchscope=2">國際標準號碼: 9781860943492 在 圖書
+<OPTION VALUE="i9780974707723&searchscope=2">國際標準號碼: 9780974707723 在 圖書
+<OPTION VALUE="i9780130996312&searchscope=2">國際標準號碼: 9780130996312 在 圖書
+<OPTION VALUE="i9780132351690&searchscope=2">國際標準號碼: 9780132351690 在 圖書
+<OPTION VALUE="i9780471323242&searchscope=2">國際標準號碼: 9780471323242 在 圖書
+<OPTION VALUE="i9780135408827&searchscope=2">國際標準號碼: 9780135408827 在 圖書
+<OPTION VALUE="i9781259095696&searchscope=2">國際標準號碼: 9781259095696 在 圖書
+<OPTION VALUE="i9789868563513&searchscope=2">國際標準號碼: 9789868563513 在 圖書
+<OPTION VALUE="i9789576095016&searchscope=2">國際標準號碼: 9789576095016 在 圖書
+<OPTION VALUE="i9789865840495&searchscope=2">國際標準號碼: 9789865840495 在 圖書
+<OPTION VALUE="i9789577843685&searchscope=2">國際標準號碼: 9789577843685 在 圖書
+<OPTION VALUE="i9789863411796&searchscope=2">國際標準號碼: 9789863411796 在 圖書
+<OPTION VALUE="i9789576099038{u00A0}&searchscope=2">國際標準號碼: 9789576099038? 在 圖書
+<OPTION VALUE="i9789864129539&searchscope=2">國際標準號碼: 9789864129539 在 圖書
+<OPTION VALUE="i9789865840488&searchscope=2">國際標準號碼: 9789865840488 在 圖書
+<OPTION VALUE="i9867497422{u00A0}&searchscope=2">國際標準號碼: 9867497422? 在 圖書
+<OPTION VALUE="i9789576968488&searchscope=2">國際標準號碼: 9789576968488 在 圖書
+<option value="+/search~S2*cht/i9781259011825/i9781259011825/1,1,1,E/frameset&FF=i9781259011825&1,1,&clear_history">(清除查詢歷史)</option>
+<option value="+/*cht">(結束查詢)</option>
+</select>
+<noscript>
+<h2>搜索歷史功能需要 JavaScript。</h2>
+</noscript>
+</form>
+</div>
+<div class="bibPager">
+
+結果頁﹕
+<a href="/search~S2*cht?/i9781259011825/i9781259011825/1%2C1%2C1%2CE/frameset&FF=i9781259011221&0%2C0%2C"><img src="/screens/bib_paging_prev_cht.gif" class="button" border="0" alt="前一紀錄" /></a>
+<a href="/search~S2*cht?/i9781259011825/i9781259011825/1%2C1%2C1%2CE/frameset&FF=i9781259060427&1%2C1%2C"><img src="/screens/bib_paging_next_cht.gif" class="button" border="0" alt="下一紀錄" /></a>
+</div>
+</div>
+<br style="clear:both"/>
+<div style="float:right;width:20%"">
+</div>
+<div style="width:100%;">
+<table cellpadding="10" cellspacing="0" width="100%">
+<tr><td witdh="80%" valign="top">
+<table id="bibDisplayLayout" cellpadding="0" cellspacing="0"width="100%">
+<tr>
+<td valign="top" align="left" >
+<style type="text/css">
+<!--
+#rategroup-48 { display: inline }
+#rateneed-48  { display: none }
+#rategroupMy-48 { display: none }
+#ratemy-48      { display: inline }
+#rategroup-47 { display: inline }
+#rateneed-47  { display: none }
+#rategroupMy-47 { display: none }
+#ratemy-47      { display: inline }
+#rategroup-46 { display: inline }
+#rateneed-46  { display: none }
+#rategroupMy-46 { display: none }
+#ratemy-46      { display: inline }
+#rategroup-45 { display: inline }
+#rateneed-45  { display: none }
+#rategroupMy-45 { display: none }
+#ratemy-45      { display: inline }
+#rategroup-44 { display: inline }
+#rateneed-44  { display: none }
+#rategroupMy-44 { display: none }
+#ratemy-44      { display: inline }
+#rategroup-43 { display: inline }
+#rateneed-43  { display: none }
+#rategroupMy-43 { display: none }
+#ratemy-43      { display: inline }
+#rategroup-42 { display: inline }
+#rateneed-42  { display: none }
+#rategroupMy-42 { display: none }
+#ratemy-42      { display: inline }
+#rategroup-41 { display: inline }
+#rateneed-41  { display: none }
+#rategroupMy-41 { display: none }
+#ratemy-41      { display: inline }
+#rategroup-40 { display: inline }
+#rateneed-40  { display: none }
+#rategroupMy-40 { display: none }
+#ratemy-40      { display: inline }
+#rategroup-39 { display: inline }
+#rateneed-39  { display: none }
+#rategroupMy-39 { display: none }
+#ratemy-39      { display: inline }
+#rategroup-38 { display: inline }
+#rateneed-38  { display: none }
+#rategroupMy-38 { display: none }
+#ratemy-38      { display: inline }
+#rategroup-37 { display: inline }
+#rateneed-37  { display: none }
+#rategroupMy-37 { display: none }
+#ratemy-37      { display: inline }
+#rategroup-36 { display: inline }
+#rateneed-36  { display: none }
+#rategroupMy-36 { display: none }
+#ratemy-36      { display: inline }
+#rategroup-35 { display: inline }
+#rateneed-35  { display: none }
+#rategroupMy-35 { display: none }
+#ratemy-35      { display: inline }
+#rategroup-34 { display: inline }
+#rateneed-34  { display: none }
+#rategroupMy-34 { display: none }
+#ratemy-34      { display: inline }
+#rategroup-33 { display: inline }
+#rateneed-33  { display: none }
+#rategroupMy-33 { display: none }
+#ratemy-33      { display: inline }
+#rategroup-32 { display: inline }
+#rateneed-32  { display: none }
+#rategroupMy-32 { display: none }
+#ratemy-32      { display: inline }
+#rategroup-31 { display: inline }
+#rateneed-31  { display: none }
+#rategroupMy-31 { display: none }
+#ratemy-31      { display: inline }
+#rategroup-30 { display: inline }
+#rateneed-30  { display: none }
+#rategroupMy-30 { display: none }
+#ratemy-30      { display: inline }
+#rategroup-29 { display: inline }
+#rateneed-29  { display: none }
+#rategroupMy-29 { display: none }
+#ratemy-29      { display: inline }
+#rategroup-28 { display: inline }
+#rateneed-28  { display: none }
+#rategroupMy-28 { display: none }
+#ratemy-28      { display: inline }
+#rategroup-27 { display: inline }
+#rateneed-27  { display: none }
+#rategroupMy-27 { display: none }
+#ratemy-27      { display: inline }
+#rategroup-26 { display: inline }
+#rateneed-26  { display: none }
+#rategroupMy-26 { display: none }
+#ratemy-26      { display: inline }
+#rategroup-25 { display: inline }
+#rateneed-25  { display: none }
+#rategroupMy-25 { display: none }
+#ratemy-25      { display: inline }
+#rategroup-24 { display: inline }
+#rateneed-24  { display: none }
+#rategroupMy-24 { display: none }
+#ratemy-24      { display: inline }
+#rategroup-23 { display: inline }
+#rateneed-23  { display: none }
+#rategroupMy-23 { display: none }
+#ratemy-23      { display: inline }
+#rategroup-22 { display: inline }
+#rateneed-22  { display: none }
+#rategroupMy-22 { display: none }
+#ratemy-22      { display: inline }
+#rategroup-21 { display: inline }
+#rateneed-21  { display: none }
+#rategroupMy-21 { display: none }
+#ratemy-21      { display: inline }
+#rategroup-20 { display: inline }
+#rateneed-20  { display: none }
+#rategroupMy-20 { display: none }
+#ratemy-20      { display: inline }
+#rategroup-19 { display: inline }
+#rateneed-19  { display: none }
+#rategroupMy-19 { display: none }
+#ratemy-19      { display: inline }
+#rategroup-18 { display: inline }
+#rateneed-18  { display: none }
+#rategroupMy-18 { display: none }
+#ratemy-18      { display: inline }
+#rategroup-17 { display: inline }
+#rateneed-17  { display: none }
+#rategroupMy-17 { display: none }
+#ratemy-17      { display: inline }
+#rategroup-16 { display: inline }
+#rateneed-16  { display: none }
+#rategroupMy-16 { display: none }
+#ratemy-16      { display: inline }
+#rategroup-15 { display: inline }
+#rateneed-15  { display: none }
+#rategroupMy-15 { display: none }
+#ratemy-15      { display: inline }
+#rategroup-14 { display: inline }
+#rateneed-14  { display: none }
+#rategroupMy-14 { display: none }
+#ratemy-14      { display: inline }
+#rategroup-13 { display: inline }
+#rateneed-13  { display: none }
+#rategroupMy-13 { display: none }
+#ratemy-13      { display: inline }
+#rategroup-12 { display: inline }
+#rateneed-12  { display: none }
+#rategroupMy-12 { display: none }
+#ratemy-12      { display: inline }
+#rategroup-11 { display: inline }
+#rateneed-11  { display: none }
+#rategroupMy-11 { display: none }
+#ratemy-11      { display: inline }
+#rategroup-10 { display: inline }
+#rateneed-10  { display: none }
+#rategroupMy-10 { display: none }
+#ratemy-10      { display: inline }
+#rategroup-9 { display: inline }
+#rateneed-9  { display: none }
+#rategroupMy-9 { display: none }
+#ratemy-9      { display: inline }
+#rategroup-8 { display: inline }
+#rateneed-8  { display: none }
+#rategroupMy-8 { display: none }
+#ratemy-8      { display: inline }
+#rategroup-7 { display: inline }
+#rateneed-7  { display: none }
+#rategroupMy-7 { display: none }
+#ratemy-7      { display: inline }
+#rategroup-6 { display: inline }
+#rateneed-6  { display: none }
+#rategroupMy-6 { display: none }
+#ratemy-6      { display: inline }
+#rategroup-5 { display: inline }
+#rateneed-5  { display: none }
+#rategroupMy-5 { display: none }
+#ratemy-5      { display: inline }
+#rategroup-4 { display: inline }
+#rateneed-4  { display: none }
+#rategroupMy-4 { display: none }
+#ratemy-4      { display: inline }
+#rategroup-3 { display: inline }
+#rateneed-3  { display: none }
+#rategroupMy-3 { display: none }
+#ratemy-3      { display: inline }
+#rategroup-2 { display: inline }
+#rateneed-2  { display: none }
+#rategroupMy-2 { display: none }
+#ratemy-2      { display: inline }
+#rategroup-1 { display: inline }
+#rateneed-1  { display: none }
+#rategroupMy-1 { display: none }
+#ratemy-1      { display: inline }
+#rategroup0 { display: inline }
+#rateneed0  { display: none }
+#rategroupMy0 { display: none }
+#ratemy0      { display: inline }
+#rategroup1 { display: inline }
+#rateneed1  { display: none }
+#rategroupMy1 { display: none }
+#ratemy1      { display: inline }
+-->
+</style>
+<!-- BEGIN BIBDETAIL TABLE BORDER -->
+<table width="100%" border="0" cellspacing="1" cellpadding="2"  class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellspacing="3" cellpadding="0">
+<tr><!-- next row for fieldtag=a -->
+<td valign="top" width="20%"  class="bibInfoLabel">作者</td>
+<td class="bibInfoData">
+<a href="/search~S2*cht?/aGarrison%2C+Ray+H.%2C/agarrison+ray+h/-3,-1,0,B/browse">Garrison, Ray H., author.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=t -->
+<td valign="top" width="20%"  class="bibInfoLabel">書名</td>
+<td class="bibInfoData">
+<strong>Managerial accounting / Ray H. Garrison, D.B.A., CPA, Professor Emeritus, Brigham Young University, Eric W. Noreen, Ph.D., CMA, Professor Emeritus, University of Washington, Peter C. Brewer, Ph.D., CPA, Wake Forest University, Nam Sang Cheng, Ph.D., FCA, Associate Professor, Singapore Management University, Katherine C. K. Yuen, M.Sc., FCA, Senior Lecturer, Singapore Management University.</strong></td></tr>
+<tr><!-- next row for fieldtag=p -->
+<td valign="top" width="20%"  class="bibInfoLabel">出版項</td>
+<td class="bibInfoData">
+New York : McGraw-Hill Education, c2015.</td></tr>
+<tr><!-- next row for fieldtag=e -->
+<td valign="top" width="20%"  class="bibInfoLabel">版本項</td>
+<td class="bibInfoData">
+Asia global edition 2e.</td></tr>
+</table>
+<!-- END INNER BIB TABLE -->
+</td></tr>
+</table>
+<!-- END BIBDETAIL TABLE -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellpadding="0" cellspacing="3">
+<tr>
+<td valign="top" width="20%" class="bibInfoLabel">評級</td>
+<td class="bibInfoData">
+<span class="rateLabel"><a href="/screens~S2*cht/ratings_cht.html">評等</a></span><span class="rateData">
+<span id="rategroup1"><a href="/patroninfo~S2*cht/0/redirect=/search~S2*cht?/i9781259011825/i9781259011825/1%2C1%2C1%2CE/frameset&FF=i9781259011825&1%2C1%2C"><img src="/screens/rate_no.gif" border="0" width="75" height="14" title="No one has rated this material" /></a>
+
+</span></span></td>
+</tr></table></td></tr></table>
+</td>
+<td valign="top" id="coverImage" align="center">
+<a href="https://findbook.tw/book/9781259011825/basic" target="_parent"><img src="https://static.findbook.tw/image/book/9781259011825/large" width="100" border="0" alt="書本封面"></a><div class="bibRecordLink"><img src="/screens/permlink.gif"/>&nbsp;<a id="recordnum" href="/record=b1742047~S2*cht">此記錄Bookmark連結</a></div><!--問題回報-->
+<p><a id="troubleshoot" title="問題回報"><img src="/screens/trouble_cht.gif"></a></p>
+<p><img id = "QRcodeimg" src=""></p> 
+<script type="text/javascript"> 
+var recordlink = document.getElementById('recordnum').href;
+var troubleshootlink = document.getElementById('troubleshoot');
+var email = "chienhui@mail.ntust.edu.tw;peijung@mail.ntust.edu.tw;lanhs@mail.ntust.edu.tw";
+var subject = "Report NTUST Library Record Error";
+var errorMsg = "Error Record is at link: " + recordlink;
+var body_message = encodeURIComponent(errorMsg) + "%0D" + 
+                   "-------------------------------------------%0D" + 
+                   "The data error you find:%0D" +
+                   "%0D" +
+                   "%0D" +
+                   "%0D" +
+                   "-------------------------------------------%0D";
+ 
+var mailtostr = 'mailto:'+email+'?subject='+encodeURIComponent(subject)+'&body='+body_message;
+troubleshootlink.href = mailtostr;
+document.getElementById('QRcodeimg').src='http://chart.apis.google.com/chart?cht=qr&chl='+recordlink+'&chs=125x125';
+</script>
+<!--問題回報-->
+<p></p>
+
+</td>
+</tr>
+</table>
+<font color="red">
+</font>
+<table width="100%" border="0" cellspacing="1" cellpadding="2" class="bibItems">
+<tr  class="bibItemsHeader">
+<th width="18%"  class="bibItemsHeader">
+館藏地
+</th>
+<th width="13%"  class="bibItemsHeader">
+條碼
+</th>
+<th width="20%"  class="bibItemsHeader">
+索書號
+</th>
+<th width="18%"  class="bibItemsHeader">
+冊次
+</th>
+<th width="6%"  class="bibItemsHeader">
+年代
+</th>
+<th width="25%"  class="bibItemsHeader">
+狀態 (<a href="/screens/status_description_cht.html" target="blank"><font color="BLUE">說明</font></a>)
+</th>
+</tr>
+<tr  class="bibItemsEntry">
+
+<td width="18%" ><!-- field 1 -->&nbsp;3F 西文書庫 
+</td>
+<td width="13%" ><!-- field b -->&nbsp;0115549 </td>
+<td width="20%" ><!-- field C -->&nbsp;HF5657.4 G193 2015 <a href="/search~S2*cht?/cHF5657.4+G193+2015/chf5657+4+g193/-3,-1,,E/browse">《鄰近架位館藏》</a></td>
+<td width="18%" ><!-- field v --></td>
+<td width="6%" ><!-- field d --></td>
+<td width="25%" ><!-- field % -->&nbsp;可外借 </td></tr>
+</table>
+<h1 class="bareBreaker">Details</h1>
+<!-- BEGIN BIBDETAIL TABLE BORDER -->
+<table width="100%" border="0" cellspacing="1" cellpadding="2"  class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellspacing="3" cellpadding="0">
+<tr><!-- next row for fieldtag=r -->
+<td valign="top" width="20%"  class="bibInfoLabel">稽核項</td>
+<td class="bibInfoData">
+xlv, 969 pages : color illustrations &#59; 28 cm</td></tr>
+<tr><!-- next row for fieldtag=n -->
+<td valign="top" width="20%"  class="bibInfoLabel">附註</td>
+<td class="bibInfoData">
+&#34;An Asian adaptation of Managerial accouting, fifteenth edition by Ray H. Garrison, Eric W. Noreen, and Peter C. Brewer&#34;--Title page verso.</td></tr>
+<tr><!-- next row for fieldtag=n -->
+<td></td>
+<td class="bibInfoData">
+Includes bibliographical references and index.</td></tr>
+<tr><!-- next row for fieldtag=n -->
+<td valign="top" width="20%"  class="bibInfoLabel">內容</td>
+<td class="bibInfoData">
+Chapter 1. Managerial accounting and the business environment -- chapter 2. Cost concept -- chapter 3. Cost behavior: analysis and use -- chapter 4. Cost-volume-profit relationships -- chapter 5. Absorption costing and variable costing -- chapter 6. Cost allocations of service departments -- chapter 7. Activity-based costing: a tool to aid decision-making -- chapter 8. Job-order costing -- chapter 9. Process costing -- chapter 10. Master budgeting -- chapter 11. Flexible budgets and performance analysis --chapter 12. Standard costs and variances -- chapter 13. Performance measurement in decentralized organizations -- chapter 14. Differential analysis: the key to decision making -- chapter 15. Capital budgeting decisions -- chapter 16. Statement of cash flows -- chapter 17. Financial statement analysis -- Appendix A. Pricing products and services -- Appendix B. Profitability analysis -- Photo credits -- Index.</td></tr>
+<tr><!-- next row for fieldtag=d -->
+<td valign="top" width="20%"  class="bibInfoLabel">標題</td>
+<td class="bibInfoData">
+<a href="/search~S2*cht?/dManagerial+accounting+--+Asia./dmanagerial+accounting+asia/-3,-1,0,B/browse">Managerial accounting -- Asia.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=d -->
+<td></td>
+<td class="bibInfoData">
+<a href="/search~S2*cht?/dManagerial+accounting+--+United+States./dmanagerial+accounting+united+states/-3,-1,0,B/browse">Managerial accounting -- United States.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=b -->
+<td valign="top" width="20%"  class="bibInfoLabel">其他作者</td>
+<td class="bibInfoData">
+<a href="/search~S2*cht?/aNoreen%2C+Eric+W.%2C/anoreen+eric+w/-3,-1,0,B/browse">Noreen, Eric W., author.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=b -->
+<td></td>
+<td class="bibInfoData">
+<a href="/search~S2*cht?/aBrewer%2C+Peter+C.%2C/abrewer+peter+c/-3,-1,0,B/browse">Brewer, Peter C., author.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=b -->
+<td></td>
+<td class="bibInfoData">
+<a href="/search~S2*cht?/aCheng%2C+Nam+Sang%2C/acheng+nam+sang/-3,-1,0,B/browse">Cheng, Nam Sang, author.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=b -->
+<td></td>
+<td class="bibInfoData">
+<a href="/search~S2*cht?/aYuen%2C+Katherine+C.K.%2C/ayuen+katherine+c+k/-3,-1,0,B/browse">Yuen, Katherine C.K., author.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=b -->
+<td></td>
+<td class="bibInfoData">
+Adaptation of (work): <a href="/search~S2*cht?/aGarrison%2C+Ray+H.%2C/agarrison+ray+h/-3,-1,0,B/browse">Garrison, Ray H.,</a>
+ author. <a href="/search~S2*cht?/tManagerial+accounting./tmanagerial+accounting/-3,-1,0,B/browse">Managerial accounting.</a>
+
+</td></tr>
+<tr><!-- next row for fieldtag=u -->
+<td valign="top" width="20%"  class="bibInfoLabel">其他題名</td>
+<td class="bibInfoData">
+Managerial accounting : an Asian perspective</td></tr>
+<tr><!-- next row for fieldtag=i -->
+<td valign="top" width="20%"  class="bibInfoLabel">ISBN</td>
+<td class="bibInfoData">
+9781259011825 (paperback)</td></tr>
+<tr><!-- next row for fieldtag=i -->
+<td></td>
+<td class="bibInfoData">
+1259011828 (paperback)</td></tr>
+</table>
+<!-- END INNER BIB TABLE -->
+</td></tr>
+</table>
+<!-- END BIBDETAIL TABLE -->
+</td>
+</tr>
+</table>
+</div>
+</div><!-- close bibDisplayContent -->
+</div><!-- close bibDisplayBody -->
+<br />
+
+<!-- begin botlogo.html file -->
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 15 February 2008 -->
+
+</div><!-- end content container -->
+
+</div> <!-- end clearing div -->
+<style type="text/css">
+<!--
+.style3 {
+	font-size: 12px;
+	color: #000000;
+}
+-->
+</style>
+<div align="center">
+  <table width="100%"  border="0">
+    <tr>
+      <td bgcolor="#F7F7F7"><div align="center" class="style3"><strong>  國立台灣科技大學圖書館版權所有c2008 NTUST Library</strong></div></td>
+	</tr>
+	<tr>
+	  <td bgcolor="#F7F7F7"><div align="center" class="style3"><strong>  借還書服務：(02)27376195&nbsp;&nbsp;Email：<a href="mailto:libcir@mail.ntust.edu.tw">libcir@mail.ntust.edu.tw </a>│ 參考諮詢服務：(02)27376196</strong>&nbsp;&nbsp;<strong>Email：<a href="mailto:lib@mail.ntust.edu.tw">lib@mail.ntust.edu.tw</a></strong></div></td>
+    </tr>
+  </table>
+</div>
+
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11873091-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- end botlogo.html file -->
+
+</body>
+</html>
+
+
